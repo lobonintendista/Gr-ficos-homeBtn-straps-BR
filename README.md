@@ -49,31 +49,18 @@ Para abrir o arquivo homeBtn.arc ou as straps.tpl e modificar os gráficos conti
 
 A estrutura mais comum do homeBtn.arc (HOME Menu do Wii) é semelhante à de outros layouts da interface do console. O arquivo geralmente é um RARC/U8 Archive, contendo layouts, animações, fontes e texturas do menu HOME.
 
-Exemplo de estrutura:
+## Estrutura do homeBtn.arc
 
-homeBtn.arc
-│
-├─ anim/    - pasta cpm arquivos com animações dos botões, fade, janelas e efeitos.
-│   ├─ homeBtn_00.brlan
-│   ├─ homeBtn_01.brlan
-│   └─ ...
-│
-├─ blyt/    - Arquivo que define a posição e tamanho dos elementos da interface.
-│   └─ homeBtn.brlyt
-│
-├─ font/    - Fontes .brfnt usadas pelo menu HOME.
-│   ├─ wbf1.brfnt
-│   └─ ...
-│
-├─ timg/    - Texturas .tpl com gráficos em png (botões, ícones, fundo, bateria, volume, etc.). 
-│   ├─ button_a.tpl
-│   ├─ button_b.tpl
-│   ├─ background.tpl
-│   ├─ speaker.tpl
-│   ├─ battery.tpl
-│   └─ ...
-│
-└─ home.csv  - Textos localizados do menu HOME.
+| Arquivo/Pasta | Descrição |
+|---------------|-----------|
+| `anim/` | Arquivos `.brlan` com animações e transições do Menu HOME. |
+| `blyt/` | Arquivo `.brlyt` responsável pelo layout como posição e tamanho dos elementosda na interface. |
+| `font/` | Fontes `.brfnt` utilizadas pelo menu pelo arquivo home.csv. |
+| `timg/` | Texturas `.tpl` Texturas .tpl com gráficos em png (botões, ícones, fundo, bateria, volume, etc.). |
+| `home.csv` | Arquivo com textos exibidos pelo Menu HOME. |
+
+
+OBS: Programa que traduz automaticamente os textos do arquivo home.csv: https://github.com/lobonintendista/TRADUTOR_HOME
 
 ## Aviso
 
